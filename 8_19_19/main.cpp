@@ -38,7 +38,7 @@ bool sumKEasy(int k, std::vector<int> list) {
 
     for (i = 0; i < n; i++) {
         for (j = i; j < n; j++) {
-            if (list[i] + list[j] == k)
+            if (i != j && list[i] + list[j] == k)
                 return true;
         }
     }
