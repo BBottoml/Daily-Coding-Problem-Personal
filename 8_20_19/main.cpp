@@ -9,6 +9,7 @@ If our input was [3, 2, 1], the expected output would be [2, 3, 6].
  */
 
 #include <iostream>
+#include <cassert>
 
 // global for testing
 int ELEMENTS = 5;
@@ -21,12 +22,14 @@ int main() {
     // test example
     int newArray[ELEMENTS];
     int arr[] = {1, 2, 3, 4, 5};
+    int key[] = {120, 60, 40, 30, 24};
     newArr(arr, newArray);
 
     std::cout << "The new array is: " << std::endl;
-    for (int i = 0; i < ELEMENTS; i++)
+    for (int i = 0; i < ELEMENTS; i++) {
+        assert(key[i] == newArray[i]);
         std::cout << newArray[i] << std::endl;
-
+    }
 
     return 0;
 }

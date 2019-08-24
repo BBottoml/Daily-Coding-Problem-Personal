@@ -9,6 +9,7 @@ Bonus: Can you do this in one pass?
 
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 int main() {
 
@@ -17,9 +18,12 @@ int main() {
 
     // example test
     std::vector<int> list = {1, 3, 5, 1, 7, 1, 9};
-    int k, m; 
+    int k, m;
     k = 8;
     m = 0;
+
+    assert(sumKEasy(k, list) == 1);
+    assert(sumKEasy(m, list) == 0);
 
     std::cout << "When k = 8: " << sumKEasy(k, list) << std::endl;
     std::cout << "When k = 0: " << sumKEasy(m, list) << std::endl;
