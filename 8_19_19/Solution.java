@@ -15,7 +15,7 @@ O(n^2) so this is a significantly
 more optimal solution
 */
 
-public class 8_19_19 {
+public class Solution {
     public static void main(String[] args) {
         // problem setup 
         // given an array of integers
