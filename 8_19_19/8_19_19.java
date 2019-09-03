@@ -37,7 +37,7 @@ public class 8_19_19 {
         // any two integers add up to desiredSum using the 
         // hashmap
         for (int i : someArray) {
-            int currentSum = desiredSum -= i;
+            int currentSum = desiredSum - i;
             if (hp.containsKey(currentSum))
                 return True; 
         }
