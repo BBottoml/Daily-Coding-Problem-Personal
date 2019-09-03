@@ -29,7 +29,7 @@ public class 8_19_19 {
     public static boolean sumFound(int desiredSum, int[] someArray) {
         
         // initalize a hashmap
-        HashMap<Integer> hp = new HashMap<>();
+        HashMap<Integer, Integer> hp = new HashMap<>();
         for (int i : someArray)
             hp.put(i, i); 
         
