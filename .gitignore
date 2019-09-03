@@ -1,3 +1,7 @@
 .vscode*
 *.xml
 *.iml
+*.class
+8_19_19/Solution/.settings/org.eclipse.jdt.core.prefs
+8_19_19/Solution/.project
+8_19_19/Solution/.classpath

@@ -1,3 +1,6 @@
+package Solution;
+import java.util.HashMap;
+
 /*
 Good morning! Here's your coding interview problem for today.
 This problem was recently asked by Google.
@@ -6,6 +9,7 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 Bonus: Can you do this in one pass?
  * Bradley Bottomlee
  */
+
 
 /*
 Remarks: 
@@ -16,6 +20,7 @@ more optimal solution
 */
 
 public class Solution {
+
     public static void main(String[] args) {
         // problem setup 
         // given an array of integers
@@ -31,7 +36,7 @@ public class Solution {
         // initalize a hashmap
         HashMap<Integer, Integer> hp = new HashMap<>();
         for (int i : someArray)
-            hp.put(i, i); 
+            hp.put(i, i);
         
         // iterate once more through the array and determine if 
         // any two integers add up to desiredSum using the 
@@ -39,10 +44,10 @@ public class Solution {
         for (int i : someArray) {
             int currentSum = desiredSum - i;
             if (hp.containsKey(currentSum))
-                return True; 
+                return true; 
         }
 
-        return False; 
+        return false; 
    
         }
 
