@@ -24,17 +24,26 @@ int main() {
 
     assert(sumKEasy(k, list) == 1);
     assert(sumKEasy(m, list) == 0);
-
+    
+    // brute force implementation
+    // we iterate through the entire array in the outer loop
+    // and from j to n in the inner loop
+    // hence this is O(n^2) time complexity
+    std::cout << "Easy implemenation: " << std::endl;
     std::cout << "When k = 8: " << sumKEasy(k, list) << std::endl;
     std::cout << "When k = 0: " << sumKEasy(m, list) << std::endl;
 
+    // more optimal implemenation
+    // sort the array O(n log n)
+    // better implementation in java 
+    // see file 
+    sort(list.begin(), list.end())
+    
+    
     return 0;
 }
 
-// easy implementation
-// we iterate through the entire array in the outer loop
-// and from j to n in the inner loop
-// hence this is O(n^2) time complexity
+
 bool sumKEasy(int k, std::vector<int> list) {
 
     unsigned int i, j;
@@ -49,4 +58,6 @@ bool sumKEasy(int k, std::vector<int> list) {
     return false;
 }
 
-// intend to implement bonus
+bool optimalSum(int k, std::vecotr<int> list) {
+
+}
